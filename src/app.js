@@ -3,7 +3,9 @@ const app = express();
 const routes = require('./routes');
 const error404 = require('./errors/error404');
 const docs = require('./documentations/docs');
+const morgan = require('morgan');
 
+app.use(morgan('tiny'));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: false
