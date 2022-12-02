@@ -1,4 +1,6 @@
 const {User} = require("../models");
+// const {bcrypt} = require('../services');/
+
 
 module.exports.postUser = async (req, res) => {
   try {
